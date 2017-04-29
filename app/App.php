@@ -8,6 +8,9 @@ namespace app;
  */
 class App
 {
+    /**
+     *
+     */
     public function run()
     {
         $config = [
@@ -16,8 +19,9 @@ class App
             ]
         ];
         $app = new \Slim\App($config);
-//        $app->get('/', '\app\controllers\Test:hello');
+
         $app->get('/a', '\app\controllers\UserController:index');
+
         $app->run();
     }
 }

@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: he
- * Date: 4/29/2017
- * Time: 11:24 AM
- */
 
 namespace app\controllers;
 
@@ -13,8 +7,17 @@ use app\models\User;
 use Slim\Http\Request;
 use Slim\Http\Response;
 
+/**
+ * Class UserController
+ * @package app\controllers
+ */
 class UserController
 {
+    /**
+     * @param Request $request
+     * @param Response $response
+     * @return Response
+     */
     public function index(Request $request, Response $response)
     {
         $userCount = User::count();
