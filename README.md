@@ -1,5 +1,5 @@
 # SlimStartpoint
-Micro framework base on Slim, contain cotroller and model and Eloquent ORM.
+Micro framework base on Slim, contain cotroller and Eloquent ORM model.
 
 # Model 
 Laravel Eloquent
